@@ -1,0 +1,74 @@
+:root {
+    --c-black: #111111;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: var(--c-black);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* Start Navbar */
+.navbar .navbar-brand img {
+    height: 45px;
+    margin: 10px;
+}
+.navbar ul li .nav-link {
+    font-size: 13px;
+}
+.navbar .navbar-nav .dropdown-menu {
+    width: 280px;
+}
+.navbar .navbar-nav .dropdown-item {
+    color: #666666;
+    padding: 10px 30px;
+    transition: all 0.4s ease-in-out;
+}
+.navbar .navbar-nav .dropdown-item:hover {
+    padding-left: 40px;
+    padding-right: 20px;
+    background-color: rgb(33,37,41);
+}
+.navbar .navbar-nav .sub-menu {
+    top: 0;
+    left: 270px;
+    display: none;
+    transition: all 0.4s ease-in-out;
+}
+.navbar .navbar-nav .grid,
+.navbar .navbar-nav .mansonry {
+    transition: 0.3s;
+}
+.navbar .navbar-nav .grid:hover .sub-menu,
+.navbar .navbar-nav .mansonry:hover .sub-menu {
+    display: block;
+}
+.navbar .icons a {
+    background-color: rgba(102,102,102,0.1);
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+.navbar .icons a:last-child {
+    font-size: 7px;
+    padding: 23px 14px;
+}
+.navbar .icons a:hover {
+    background-color: white;
+    color: var(--c-black);
+    margin-top: -10px;
+}
+/* End Navbar */
+/* Start Landing */
+.landing {
+    background-image: url(../imgs/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 91px);
+}
+/* End Landing */
