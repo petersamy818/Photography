@@ -1,5 +1,6 @@
 :root {
     --c-black: #111111;
+    --c-orange: #c48f56;
 }
 html {
     scroll-behavior: smooth;
@@ -15,12 +16,20 @@ a {
     text-decoration: none;
 }
 /* Start Navbar */
+.navbar {
+    background-color: var(--c-black);
+}
 .navbar .navbar-brand img {
     height: 45px;
     margin: 10px;
 }
 .navbar ul li .nav-link {
     font-size: 13px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.4s ease-in-out;
+}
+.navbar ul li .nav-link:hover {
+    border-bottom: 3px solid var(--c-orange);
 }
 .navbar .navbar-nav .dropdown-menu {
     width: 280px;
@@ -38,7 +47,10 @@ a {
 .navbar .navbar-nav .sub-menu {
     top: 0;
     left: 270px;
-    display: none;
+    opacity: 0;
+    z-index: -1;
+    height: 0;
+    overflow: hidden;
     transition: all 0.4s ease-in-out;
 }
 .navbar .navbar-nav .grid,
@@ -47,7 +59,9 @@ a {
 }
 .navbar .navbar-nav .grid:hover .sub-menu,
 .navbar .navbar-nav .mansonry:hover .sub-menu {
-    display: block;
+    opacity: 1;
+    z-index: 2;
+    height: auto;
 }
 .navbar .icons a {
     background-color: rgba(102,102,102,0.1);
@@ -63,6 +77,33 @@ a {
     color: var(--c-black);
     margin-top: -10px;
 }
+@media (max-width: 1200px) {
+    .navbar .navbar-brand img {
+        height: 35px;
+        margin: 0;
+    }
+    .navbar .navbar-toggler {
+        background-color: var(--c-orange);
+    }
+    .navbar .navbar-nav {
+        margin-top: 40px;
+    }
+    .navbar ul li .nav-link svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+    }
+    .navbar ul li .nav-link {
+        padding: 15px 10px;
+        margin-bottom: 10px;
+        background-color: rgba(102,102,102,0.1);
+    }
+    .navbar ul li .nav-link:hover {
+        border-color: transparent;
+        opacity: 0.7;
+    }
+}
 /* End Navbar */
 /* Start Landing */
 .landing {
@@ -70,5 +111,46 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: calc(100vh - 91px);
+}
+.landing h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 90px;
+}
+.landing h1 span .and {
+    color: var(--c-orange);
+    font-size: 70px;
+}
+.landing h1 span span:last-child {
+    font-size: 120px;
+}
+.landing p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 5px;
+}
+.landing a {
+    font-family: 'Poppins', sans-serif;
+    color: #666666;
+    letter-spacing: 5px;
+    font-size: 14px;
+    border: 1px solid #666666;
+    padding: 12px 30px;
+}
+.landing a:hover {
+    color: #666666;
+    border-color: var(--c-orange);
+}
+@media (max-width: 380px) {
+    .landing h1 {
+        font-size: 65px;
+    }
+    .landing h1 span .and {
+        color: var(--c-orange);
+        font-size: 50px;
+    }
+    .landing h1 span span:last-child {
+        font-size: 80px;
+    }
 }
 /* End Landing */
