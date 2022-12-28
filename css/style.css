@@ -1,5 +1,6 @@
 :root {
     --c-black: #111111;
+    --c-alt-black: #666666;
     --c-orange: #c48f56;
 }
 html {
@@ -14,6 +15,13 @@ ul {
 }
 a {
     text-decoration: none;
+}
+.text-poppins {
+    font-family: 'Poppins', sans-serif;
+    color: var(--c-alt-black);
+    letter-spacing: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 /* Start Navbar */
 .navbar {
@@ -35,7 +43,7 @@ a {
     width: 280px;
 }
 .navbar .navbar-nav .dropdown-item {
-    color: #666666;
+    color: var(--c-alt-black);
     padding: 10px 30px;
     transition: all 0.4s ease-in-out;
 }
@@ -123,22 +131,12 @@ a {
 .landing h1 span span:last-child {
     font-size: 120px;
 }
-.landing p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #666666;
-    letter-spacing: 5px;
-}
 .landing a {
-    font-family: 'Poppins', sans-serif;
-    color: #666666;
-    letter-spacing: 5px;
-    font-size: 14px;
-    border: 1px solid #666666;
+    border: 1px solid var(--c-alt-black);
     padding: 12px 30px;
 }
 .landing a:hover {
-    color: #666666;
+    color: var(--c-alt-black);
     border-color: var(--c-orange);
 }
 @media (max-width: 380px) {
@@ -154,3 +152,112 @@ a {
     }
 }
 /* End Landing */
+/* Start Lifestyle */
+.lifestyle {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.lifestyle .box h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 50px;
+}
+.lifestyle .box .min-box img {
+    width: 60px;
+    height: 60px;
+}
+.lifestyle .box .min-box .info h3 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 18px;
+}
+.lifestyle .box .min-box .info p {
+    font-size: 14px;
+    color: var(--c-alt-black);
+    line-height: 2.3;
+}
+@media (max-width: 991px) {
+    .lifestyle .box .min-box {
+        max-width: 550px;
+        width: fit-content;
+    }
+}
+@media (max-width: 380px) {
+    .lifestyle .box h2 {
+        font-size: 35px;
+    }
+}
+/* End Lifestyle */
+/* Start Nature And Humanity */
+.nature-humanity {
+    min-height: 850px;
+}
+.nature-humanity img {
+    top: 0;
+    right: 0;
+    border: 10px solid var(--c-alt-black);
+    object-fit: cover;
+    max-height: 500px;
+    z-index: -1;
+}
+.nature-humanity .info {
+    top: 310px;
+}
+.nature-humanity .info span svg {
+    color: var(--c-orange);
+    font-size: 70px;
+}
+.nature-humanity .info h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 90px;
+    max-width: 60%;
+    line-height: 1.2;
+}
+@media (max-width: 991px) {
+    .nature-humanity .info h2 {
+        font-size: 70px;
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .nature-humanity .info h2 {
+        font-size: 60px;
+    }
+}
+@media (max-width: 400px) {
+    .nature-humanity .info {
+        top: 210px;
+    }
+}
+/* End Nature And Humanity */
+/* Start Creativity */
+.creativity {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.creativity img {
+    border: 12px solid #333;
+    width: 500px;
+}
+.creativity .box h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 50px;
+}
+.creativity .box p {
+    font-size: 14px;
+    color: var(--c-alt-black);
+    line-height: 2.3;
+}
+.creativity .box a {
+    border: 1px solid var(--c-alt-black);
+    padding: 12px 30px;
+}
+.creativity .box a:hover {
+    color: var(--c-alt-black);
+    border-color: var(--c-orange);
+}
+@media (max-width: 991px) {
+    .creativity .box span {
+        display: block;
+        margin-top: 50px;
+    }
+}
+/* End Creativity */
