@@ -282,6 +282,7 @@ a {
     background-color: rgba(51, 51, 51, 0.283);
 }
 .camera .min-box img {
+    cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
 .camera .min-box .overlay:hover {
@@ -297,6 +298,9 @@ a {
 }
 /* End Camera */
 /* Start Challenge */
+.challenge {
+    min-height: 750px;
+}
 .challenge .box .first-img {
     max-width: 700px;
     border: 10px solid var(--c-alt-black);
@@ -407,6 +411,132 @@ a {
     }
 }
 /* End Challenge */
+/* Start Awards */
+.awards {
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.awards .box:first-of-type {
+    max-width: 500px;
+}
+.awards h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 50px;
+}
+.awards .box .min-box {
+    background-image: url(../imgs/awards-01.jpg);
+    background-size: cover;
+    height: 350px;
+    min-width: 200px;
+    padding: 30px;
+    transition: 0.4s;
+}
+.awards .box .min-box.second {
+    background-image: url(../imgs/awards-02.jpg);
+    border: 5px solid var(--c-orange);
+}
+.awards .box .min-box.third {
+    background-image: url(../imgs/awards-03.jpg);
+}
+.awards .box .min-box.last {
+    background-image: url(../imgs/awards-04.jpg);
+}
+.awards .box .min-box .contain {
+    max-width: 180px;
+    bottom: 30px;
+    opacity: 1;
+    transition: 0.4s;
+}
+.awards .box .min-box:hover .contain {
+    opacity: -1;
+}
+.awards .box .min-box .contain h3 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 25px;
+    line-height: 1.5;
+}
+.awards .box .min-box span {
+    font-size: 14px;
+    color: var(--c-orange);
+}
+.awards .box .min-box .overlay {
+    max-width: 180px;
+    transform: translateY(50%);
+    transition: 0.4s;
+    opacity: -1;
+}
+.awards .box .min-box:hover .overlay {
+    opacity: 1;
+}
+.awards .box .min-box .overlay h3 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+    line-height: 1.3;
+}
+.awards .box .min-box .overlay p {
+    font-size: 12px;
+    line-height: 2;
+}
+@media (max-width: 991px) {
+    .awards .box .min-box {
+        min-width: 175px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .awards .box .min-box .contain,
+    .awards .box .min-box .overlay {
+        max-width: 125px;
+    }
+}
+@media (max-width: 767px) {
+    .awards .box .min-box {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .awards .box .min-box .contain,
+    .awards .box .min-box .overlay {
+        max-width: 175px;
+    }
+}
+@media (max-width: 575px) {
+    .awards .box .min-box {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .awards .box .min-box .contain,
+    .awards .box .min-box .overlay {
+        max-width: 425px;
+    }
+}
+@media (max-width: 400px) {
+    .awards .box .min-box {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .awards .box .min-box .contain,
+    .awards .box .min-box .overlay {
+        max-width: 305px;
+    }
+}
+/* End Awards */
+/* Start Mirror Soul */
+.mirror {
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+.mirror .contain .box > img {
+    border: 10px solid var(--c-alt-black);
+}
+.mirror .contain .box h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 60px;
+}
+.mirror .contain .box p {
+    font-size: 14px;
+    color: var(--c-alt-black);
+    line-height: 2.3;
+}
+/* End Mirror Soul */
 /* Start Animation */
 @keyframes right-and-left {
     0%, 
