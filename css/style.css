@@ -529,14 +529,106 @@ a {
 }
 .mirror .contain .box h2 {
     font-family: 'Playfair Display SC', serif;
-    font-size: 60px;
+    font-size: 50px;
 }
 .mirror .contain .box p {
     font-size: 14px;
     color: var(--c-alt-black);
     line-height: 2.3;
 }
+@media (min-width: 576px) {
+    .mirror .contain .box .min-box .first-img {
+        border-bottom: 1px solid rgba(102,102,102,0.2);
+        border-right: 1px solid rgba(102,102,102,0.2);
+    }
+    .mirror .contain .box .min-box .second-img {
+        border-bottom: 1px solid rgba(102,102,102,0.2);
+    }
+    .mirror .contain .box .min-box .therd-img {
+        border-right: 1px solid rgba(102,102,102,0.2);
+    }
+}
+@media (max-width: 575px) {
+    .mirror .contain .box .min-box .first-img,
+    .mirror .contain .box .min-box .second-img,
+    .mirror .contain .box .min-box .therd-img {
+        border-bottom: 1px solid rgba(102,102,102,0.2);
+    }
+}
 /* End Mirror Soul */
+/* Start Feedback */
+.feedback {
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+.feedback .contain svg {
+    color: var(--c-orange);
+    font-size: 70px;
+}
+.feedback .contain h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 70px;
+}
+.feedback .contain a {
+    border: 1px solid var(--c-alt-black);
+    padding: 12px 30px;
+}
+.feedback .contain a:hover {
+    color: var(--c-alt-black);
+    border-color: var(--c-orange);
+}
+.feedback .contain .carousel-item img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+.feedback .contain .carousel-item .stars svg {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.feedback .contain .carousel-item span:first-of-type {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 18px;
+}
+.feedback .contain .carousel-item p {
+    font-size: 14px;
+    color: var(--c-alt-black);
+    line-height: 2.3;
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.feedback .contain .carousel-item button {
+    color: var(--c-orange);
+    font-size: 14px;
+}
+.feedback .contain .carousel-item button:focus {
+    box-shadow: none;
+}
+.feedback .contain .carousel-item .modal-content {
+    background-color: var(--c-black);
+    text-align: start;
+}
+.feedback .contain .carousel-item .modal-content .stars svg {
+    font-size: 14px;
+}
+.feedback .contain .carousel-item .modal-content p {
+    max-width: 100%;
+}
+.feedback .contain .carousel-item .modal-content img {
+    width: 80px;
+}
+.feedback .contain .carousel-item h4 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.feedback .contain .carousel-item span:last-of-type {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--c-alt-black);
+}
+/* End Feedback */
 /* Start Animation */
 @keyframes right-and-left {
     0%, 
