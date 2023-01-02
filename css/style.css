@@ -572,14 +572,14 @@ a {
 .feedback .contain a {
     border: 1px solid var(--c-alt-black);
     padding: 12px 30px;
+    width: fit-content;
 }
 .feedback .contain a:hover {
     color: var(--c-alt-black);
     border-color: var(--c-orange);
 }
 .feedback .contain .carousel-item img {
-    width: 200px;
-    margin-bottom: 15px;
+    width: 150px;
 }
 .feedback .contain .carousel-item .stars svg {
     font-size: 16px;
@@ -628,7 +628,81 @@ a {
     font-weight: bold;
     color: var(--c-alt-black);
 }
+@media (max-width: 575px) {
+    .feedback .contain h2 {
+        font-size: 35px;
+    }
+}
 /* End Feedback */
+/* Start Subscribe */
+.subscribe {
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+.subscribe .box .min-box h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 60px;
+}
+.subscribe .box .min-box p {
+    font-size: 14px;
+    color: var(--c-alt-black);
+    line-height: 2.3;
+}
+.subscribe .box .min-box form input:last-of-type {
+    border: 1px solid var(--c-alt-black);
+}
+.subscribe .box .min-box form input:last-of-type:hover {
+    color: var(--c-alt-black);
+    border-color: var(--c-orange);
+}
+.subscribe .box .sub-box {
+    background-color: var(--c-orange);
+}
+.subscribe .box .sub-box h3 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 450px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(../imgs/subscribe-01.jpg);
+    background-position: calc(50% - 4px) calc(50% - 40px);
+    background-size: 500px;
+}
+@media (max-width: 575px) {
+    .subscribe .box .min-box h2 {
+        font-size: 40px;
+    }
+}
+/* End Subscribe */
+/* Start Foot */
+.foot .box {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #1e1e1e;
+}
+.foot .box img {
+    height: 55px;
+    margin-bottom: 15px;
+}
+.foot .box p {
+    color: var(--c-alt-black);
+    line-height: 2.3;
+}
+.foot .box h3 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 25px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+.foot .box a {
+    width: fit-content;
+    color: var(--c-alt-black);
+    transition: 0.4s;
+}
+.foot .box a:hover {
+    color: var(--c-orange);
+}
+/* End Foot */
 /* Start Animation */
 @keyframes right-and-left {
     0%, 
