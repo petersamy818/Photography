@@ -703,6 +703,53 @@ a {
     color: var(--c-orange);
 }
 /* End Foot */
+/* Start Footer */
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer .main-box .box span {
+    font-size: 14px;
+    color: var(--c-alt-black);
+    line-height: 2.3;
+}
+.footer .box .icons a {
+    background-color: rgba(102,102,102,0.1);
+    color: white;
+    padding: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.footer .box .icons a:last-child {
+    font-size: 7px;
+    padding: 26.5px 18px;
+}
+.footer .box .icons a:hover {
+    background-color: white;
+    color: var(--c-black);
+    margin-top: -10px;
+}
+@media (max-width: 767px) {
+    .footer .main-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+    }
+}
+/* End Footer */
+/* Start Arrowup */
+.arrowup a {
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #1e1e1e;
+    transition: 0.4s;
+}
+.arrowup a:hover {
+    bottom: 30px;
+    padding: 10px 15px;
+    background-color: black;
+}
+/* End Arrowup */
 /* Start Animation */
 @keyframes right-and-left {
     0%, 
